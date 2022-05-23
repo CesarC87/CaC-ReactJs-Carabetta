@@ -1,0 +1,36 @@
+.btnFinalizar {
+    background-color: #03fb56;        
+    width: fit-content;    
+    font-family: 'Quicksand', sans-serif;
+    margin: 2% auto;
+    color: white;   
+    border: hidden;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 1% 2%;
+}
+
+.userData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5%;
+}
+
+.userData label {
+    margin: 0 1%;
+}
+
+.userData input {
+    margin: 1% auto 0;
+}
+
+.userData label {
+    font-family: 'Quicksand' , sans-serif;
+}
+
+.compraFinalizada {
+    display: flex;
+    flex-direction: column;
+    margin: 6%;
+}

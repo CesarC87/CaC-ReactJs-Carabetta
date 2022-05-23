@@ -1,0 +1,85 @@
+import { getFirestore} from "../firebase";
+
+React.useEffect(() => {
+    const products = [
+      {        
+        "title": "Grand Hotel Paris",
+        "description": "Esta es la descripción del producto 0",
+        "price": "5000",
+        "image": "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900",
+        "category": "alojamiento",
+        "stock": 8      
+      },
+      {        
+        "title": "Hotel Boutique Bariloche",
+        "description": "Esta es la descripción del producto 1",
+        "price": "3499",
+        "image": "https://historia.nationalgeographic.com.es/medio/2019/12/11/coliseo-roma_2924b6ae_1280x720.jpg",
+        "category": "alojamiento",
+        "stock": 15
+      },
+      {        
+        "title": "Hostel Barcelona",
+        "description": "Esta es la descripción del producto 2",
+        "price": "2599",
+        "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ac/a8/2b.jpg",
+        "category": "alojamiento",
+        "stock": 21
+      },
+      {        
+        "title": "Hostel Paris",
+        "description": "Esta es la descripción del producto 3",
+        "price": "6500",
+        "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fit,w_1440,h_900/crm/miamifl/Miami_Beach_Marina_1440x9000-71d78d2a5056a36_71d78edb-5056-a36a-0b88eb67bb3d6f33.jpg",
+        "category": "alojamiento",
+        "stock": 4
+      },
+      {        
+        "title": "Hotel Singapur",
+        "description": "Esta es la descripción del producto 4",
+        "price": "9500",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyyNouAdGhFTG-1h4JvFpfHcnIn4cL5QZNFg&usqp=CAU",
+        "category": "alojamiento",
+        "stock": 12
+      },
+      {        
+        "title": "Hostel Amsterdam",
+        "description": "Esta es la descripción del producto 5",
+        "price": "6400",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtx4HgHCjUA7vu3s2pQxCVSfQyO6SmagNBA&usqp=CAU",
+        "category": "alojamiento",
+        "stock": 7
+      },
+      {        
+        "title": "Hotel Marseille",
+        "description": "Esta es la descripción del producto 6",
+        "price": "5400",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCrzUFLUR2m07ezYOYGUChO3dEfgEY3iPvQ&usqp=CAU",
+        "category": "alojamiento",
+        "stock": 6
+      },
+      {        
+        "title": "Hotel Cuzco",
+        "description": "Esta es la descripción del producto 7",
+        "price": "7800",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXuYNTG6ETBiTnnB4M0logtfEEm795DxdwrA&usqp=CAU",
+        "category": "alojamiento",
+        "stock": 5
+      }
+    ];
+  
+  const db = getFirestore();
+  const productsCollection = db.collection("products")
+  const productId = db.collection('products').where("id", "==" , category)
+  
+  products.forEach((prod) => {
+    if (prod.id != )
+      productsCollection
+      .add(prod)
+      .then((docRef) => console.log("Se agregó:", docRef.id))
+      .catch((error) => console.log(error))
+  })
+  }, []);
+
+
+  Nota ---> Importarlo en la app, con useEffect para que se renderice una vez, sino se agrega cada vez que renderice.

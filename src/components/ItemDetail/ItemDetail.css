@@ -1,0 +1,84 @@
+.ItemDetailCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ItemDetailCards__izq, .ItemDetailCards__der  {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ItemDetailCards__izq {
+    position: relative;
+    border-radius: 15px;    
+    margin: 5% 0 15% 10%;
+}
+
+.ItemDetailCards__der {
+    margin: 8% 3% 0 3%;
+}
+
+.ItemDetailCards__der--description {
+    font-family: 'Poppins' , sans-serif;
+}
+
+.btn-agregar {
+    font-family: 'Poppins', sans-serif;
+    margin: 2% 0;
+    color: white;
+    background-color: var(--btnGreen);
+    border: hidden;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 1% 2%;
+}
+
+.btn-finalizar {
+    font-family: 'Poppins', sans-serif;
+    margin: 2% 0;
+    color: white;
+    background-color: #1c558d;
+    border: hidden;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 1% 2%;
+}
+
+.btnMenos {    
+    border: none;
+    background: white;
+    font-size: 2rem;
+}   
+
+.btnMas {   
+    border: none;
+    background: white;
+    font-size: 2rem;
+}
+
+.btn-agregar:hover, .btn-finalizar:hover {
+    cursor: pointer;
+}
+
+#clicks {
+    margin: 4% 0;
+}
+
+.ItemDetailCards__izq--title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    position: absolute;    
+    color: #161010;
+    background-color: white;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.ItemDetailCards__izq--img {
+    
+    border-radius: inherit;
+}

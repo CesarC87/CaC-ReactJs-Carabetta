@@ -1,0 +1,21 @@
+.footer {
+    background-color: white;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #767070;
+}
+
+
+.footer__redes {
+    display: flex;
+    flex-direction: row;    
+    color: #767070;
+    justify-content: center;
+}
+.footer__redes a {
+    margin: 1% 1%;
+    font-size: 1.5em;
+    color: #767070;
+}

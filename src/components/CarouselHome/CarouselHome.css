@@ -1,0 +1,19 @@
+.img-wrapper-carousel {
+    height: inherit;    
+}
+.img-wrapper-carousel img {   
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+}
+.carousel.slide {       
+    box-shadow: 0px 2px 20px #0000004f;
+    height: inherit;
+}
+.carousel-inner {
+    height: inherit;
+}
+.carousel-item .carousel-caption {
+    bottom: 3.25rem;
+}
+

@@ -1,38 +1,37 @@
+* , *::after, *::before{
+  margin: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  --btnGreen: #20b79a;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.App-header {  
+  /* background: linear-gradient( rgb(189 158 155 / -63%) 57%, rgb(28 28 28 / 87%)91%),url(https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80);  min-height: 25vh;   */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
 }
 
-.App-link {
-  color: #61dafb;
+html a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+}
+html a:hover {
+  color: rgb(212, 212, 212);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carouselContainerHome {
+  height: 300px;
 }
+
+
+/*color: darken($color: #a5b2c2, $amount: 21);*/
